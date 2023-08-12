@@ -37,7 +37,7 @@ document.getElementById('save-btn').addEventListener('click', function(){
         alert('No Balence')
         return;
     }
-    const savingBalence = Math.round((saveAmount*100) / totalBalence).toFixed(3);
+    const savingBalence = (saveAmount*totalBalence) / 100;;
     const remBalence = totalBalence - savingBalence;
 
     setElementTextById('save-amount', savingBalence);
